@@ -3,3 +3,7 @@
 *.egg-info
 # magic environments
 .magic
+
+# pixi environments
+.pixi
+*.egg-info
