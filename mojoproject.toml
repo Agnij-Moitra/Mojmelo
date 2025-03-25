@@ -6,6 +6,18 @@ platforms = ["linux-64"]
 version = "0.1.0"
 
 [tasks]
+setup = """
+cd /home/snape/projects/Mojmelo &&
+mojo ./setup.mojo &&
+mojo ./setup.mojo 1 &&
+mojo ./setup.mojo 2 &&
+mojo ./setup.mojo 3 &&
+mojo ./setup.mojo 4 &&
+mojo ./setup.mojo 5 &&
+mojo ./setup.mojo 6 &&
+mojo ./setup.mojo 7 &&
+mojo ./setup.mojo 8 &&
+mojo ./setup.mojo 9"""
 
 [dependencies]
 max = "*"
