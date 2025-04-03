@@ -2,6 +2,7 @@ from mojmelo.utils.Matrix import Matrix
 from mojmelo.utils.utils import CVM, sign, polynomial_kernel, gaussian_kernel
 from collections import Dict
 
+@value
 struct SVM_Primal(CVM):
     var lr: Float32
     var lambda_param: Float32
@@ -67,7 +68,7 @@ struct SVM_Primal(CVM):
         self.weights = Matrix(0, 0)
         self.bias = 0.0
 
-
+@value
 struct SVM_Dual(CVM):
     var lr: Float32
     var epoches: Int

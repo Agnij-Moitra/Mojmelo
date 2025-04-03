@@ -3,6 +3,7 @@ from mojmelo.utils.utils import squared_euclidean_distance, euclidean_distance
 import random
 import math
 
+@value
 struct KMeans:
     var K: Int
     var init: String

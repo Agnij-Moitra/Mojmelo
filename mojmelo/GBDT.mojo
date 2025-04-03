@@ -4,6 +4,7 @@ from mojmelo.utils.utils import CVM, sigmoid, log_g, log_h, mse_g, mse_h
 from memory import UnsafePointer
 from collections import Dict
 
+@value
 struct GBDT(CVM):
 	var criterion: String
 	var loss_g: fn(Matrix, Matrix) raises -> Matrix

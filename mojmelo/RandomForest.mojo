@@ -21,6 +21,7 @@ fn _predict(y: Matrix, criterion: String) raises -> Float32:
             most_common = k[]
     return Float32(most_common)
 
+@value
 struct RandomForest(CVM):
     var n_trees: Int
     var min_samples_split: Int

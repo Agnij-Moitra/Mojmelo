@@ -4,6 +4,7 @@ from mojmelo.utils.Matrix import Matrix
 from mojmelo.utils.utils import CVP, normal_distr
 from python import PythonObject
 
+@value
 struct GaussianNB:
     var _classes: List[String]
     var _mean: Matrix
@@ -62,6 +63,7 @@ struct GaussianNB:
     fn _pdf(self, class_idx: Int, x: Matrix) raises -> Matrix:
         return normal_distr(x, self._mean[class_idx], self._var[class_idx])
 
+@value
 struct MultinomialNB:
     var _alpha: Float32
     var _classes: List[String]

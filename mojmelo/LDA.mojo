@@ -2,6 +2,7 @@ from mojmelo.utils.Matrix import Matrix
 from mojmelo.utils.utils import gt
 from python import PythonObject
 
+@value
 struct LDA:
     var n_components: Int
     var linear_discriminants: Matrix

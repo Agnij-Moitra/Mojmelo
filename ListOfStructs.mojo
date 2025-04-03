@@ -9,25 +9,25 @@ trait Estimator(CollectionElement):
 struct KNN(Estimator):
    
     fn __init__(out self):
-        print("init")
+        print("KNN init")
     
     fn fit(self):
-        print("fit")
+        print("KNN fit")
 
     fn predict(self):
-        print("predict")
+        print("KNN predict")
         
 @value
 struct SVM(Estimator):
     
     fn __init__(out self):
-        print("init")
+        print("SVM Init")
     
     fn fit(self):
-        print("Fit")
+        print("SVM Fit")
     
     fn predict(self):
-        print("predict")
+        print("SVM predict")
 
 fn main():
     var estimators = List[Variant[KNN, SVM]]()
@@ -37,5 +37,7 @@ fn main():
     for estimator in estimators:
         if estimator[].isa[KNN]():
             estimator[][KNN].fit()
+            estimator[][KNN].predict()
         else:
             estimator[][SVM].fit()
+            estimator[][SVM].predict()

@@ -5,6 +5,7 @@ from mojmelo.utils.KDTree import KDTreeResultVector, KDTree
 from mojmelo.utils.utils import CVP
 from python import PythonObject
 
+@value
 struct KNN(CVP):
     var k: Int
     var metric: String

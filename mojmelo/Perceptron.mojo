@@ -2,6 +2,7 @@ from mojmelo.utils.Matrix import Matrix
 from mojmelo.utils.utils import CVM, unit_step
 from collections import Dict
 
+@value
 struct Perceptron(CVM):
     var lr: Float32
     var n_iters: Int

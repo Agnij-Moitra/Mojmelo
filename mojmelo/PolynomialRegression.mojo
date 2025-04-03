@@ -4,6 +4,7 @@ from collections import Dict
 import math
 import time
 
+@value
 struct PolyRegression(CVM):
     var degree: Int
     var lr: Float32

@@ -31,7 +31,7 @@ struct DecisionStump:
             predictions.data[index[]] = -1.0
         return predictions^
 
-
+@value
 struct Adaboost(CVM):
     var n_clf: Int
     var class_zero: Bool

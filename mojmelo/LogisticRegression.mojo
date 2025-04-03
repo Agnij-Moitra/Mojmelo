@@ -4,6 +4,7 @@ from collections import Dict
 import math
 import time
 
+@value
 struct LogisticRegression(CVM):
     var lr: Float32
     var n_iters: Int
